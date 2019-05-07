@@ -24,4 +24,4 @@ want to have fun and try things.
 
 ## Source code
 
-[The source code is available on GitHub](https://github.com/tforgione/spandex).
+[The source code is available on GitHub](https://github.com/rust-spandex/spandex).
