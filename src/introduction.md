@@ -18,6 +18,10 @@ This project is still really recent, and very (very) few functionnalities are
 supported. This is not production ready in any way, it's simply here if you
 want to have fun and try things.
 
+## API documentation
+
+[The API documentation is available here](/spandex).
+
 ## Source code
 
 [The source code is available on GitHub](https://github.com/tforgione/spandex).
