@@ -1,12 +1,12 @@
 # SpanDeX syntax
 
-SpanDeX's syntax is inspired by
-[Markdown](https://en.wikipedia.org/wiki/Markdown), but also, to a lesser
-extend, by [elm-markup](https://github.com/mdgriffith/elm-markup).
+The syntax of DeX is inspired by
+[Markdown](https://en.wikipedia.org/wiki/Markdown) and, to a lesser
+extent, by [elm-markup](https://github.com/mdgriffith/elm-markup).
 
 ## Paragraphs
 
-In SpanDeX, paragraph's are content that are not titles and that are separated
+In DeX, paragraphs are content that are not titles and that are separated
 by an empty line.
 
 ``` md
@@ -18,9 +18,9 @@ This is a new paragraph.
 
 ## Titles
 
-Titles are declared by prepending them by `#`, just like in markdown.
+Titles are declared by prepending a line with `#`, just like Markdown.
 
-For example, you can make titles and subtitles like so:
+For example, you may make titles and subtitles like so:
 
 ``` none
 # My title
@@ -28,8 +28,9 @@ For example, you can make titles and subtitles like so:
 ## My subtitle
 ```
 
-In SpanDeX, however, you are not allowed to put content right under a title,
-you are forced to leave an empty line. If you try to compile this
+In DeX, however, you need to leave an empty line following a title.
+
+If you try to compile this
 
 ``` none
 # My title
@@ -49,14 +50,14 @@ error: titles must be followed by an empty line
 
 ## Inline
 
-Like many markup languages, SpanDeX has inline elements that allow you to
-modify your content. Inline elements can't spread accross different paragraphs.
+Like many markup languages, DeX has inline elements that allow you to
+typeset your content. Inline elements cannot spread accross different paragraphs.
 If you want to do that, you will have to end your inline at the end of your
 paragraph, and start it again at the begining of the next one.
 
 ### Bold
 
-To put some content in bold, you need to put in between stars (`*`). For
+To put some content in bold, you need to put it between stars (`*`). For
 example, you can do:
 
 ``` none
