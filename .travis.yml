@@ -7,14 +7,17 @@ cache:
 rust:
   - stable
 
+
 before_script:
   - (test -x $HOME/.cargo/bin/mdbook || cargo install mdbook)
+
 
 script:
   - mdbook build
 
 deploy:
   provider: pages
+  overwrite: true
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   repo: rust-spandex/rust-spandex.github.io
